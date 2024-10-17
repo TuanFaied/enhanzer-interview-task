@@ -60,6 +60,7 @@ class _TaskEditingScreenState extends State<TaskEditingScreen> {
                 maxLines: null,
                 keyboardType: TextInputType.multiline,
                 decoration: const InputDecoration(hintText: 'Task Description'),
+                
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a description';
